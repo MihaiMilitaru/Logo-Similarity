@@ -1,5 +1,3 @@
-# Logo-Similarity
-
 # Logo Similarity Clustering
 
 ## Overview
