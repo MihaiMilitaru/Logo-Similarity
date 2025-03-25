@@ -32,7 +32,7 @@ The project is organized into two main folders:
 
 #### **1. `model/`**  
 This folder contains:
-- `logo_similarity.ipynb` – The main Jupyter Notebook where K-Means was tested with multiple cluster values.
+- `k-means.ipynb` – The main Jupyter Notebook where K-Means was tested with multiple cluster values.
 - `logos.snappy.parquet` – The dataset containing website domains.
 - `logos/` – Subfolder where downloaded logos are stored.
 - `clusters/` – Subfolder containing experiments with different cluster sizes.
