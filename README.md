@@ -27,9 +27,26 @@ This project aims to cluster logos based on visual similarities using deep learn
 ### 5. **Observations**
 - After testing with multiple cluster values (`[3, 5, 10, 20, 50, 70, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]`), I observed that **at 5 clusters**, visually similar logos (e.g., **Toyota, Hyundai, Mazda, and Honda**) were grouped together more effectively compared to other logos. This indicates that the clustering approach successfully captures visual similarities between logos. Number of clusters chosen influences the grouping of the logos. A great number of cluster may capture the differences better, but there should also be taken into consideration what happens when the number of clusters is less than the number of unique websites/logos or labels.
 
-### 6. **Saving and Visualizing Results**
+### 6. **Folder Structure**
+The project is organized into two main folders:
+
+#### **1. `model/`**  
+This folder contains:
+- `logo_similarity.ipynb` – The main Jupyter Notebook where K-Means was tested with multiple cluster values.
+- `logos.snappy.parquet` – The dataset containing website domains.
+- `logos/` – Subfolder where downloaded logos are stored.
+- `clusters/` – Subfolder containing experiments with different cluster sizes.
+  - Each experiment (`experiment_5/`, `experiment_10/`, etc.) has subfolders for individual clusters.
+  - Each cluster folder contains logos assigned to that cluster.
+
+#### **2. `tests/`**  
+This folder contains:
+- `check_similarity.py` – A script that takes two command-line arguments:
+  1. **Path to the dataset file** (CSV or Parquet) – The list of websites to generate the logo dataset.
+  2. **Number of clusters** – The number of groups for K-Means clustering based on logo similarity.
+
+### 7. **Saving and Visualizing Results**
 - Logos are saved into corresponding cluster folders.
-- The script generates plots of clusters for visual analysis.
 
 ## Requirements
 To run this project, install the required dependencies:
