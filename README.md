@@ -25,7 +25,7 @@ This project aims to cluster logos based on visual similarities using deep learn
 - Logos are organized into directories based on their assigned cluster labels.
 
 ### 5. **Observations**
-- After testing with multiple cluster values (`[3, 5, 10, 20, 50, 70, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]`), I observed that **at 5 clusters**, visually similar logos (e.g., **Toyota, Hyundai, and Honda**) were grouped together more effectively compared to other logos. This indicates that the clustering approach successfully captures visual similarities between logos.
+- After testing with multiple cluster values (`[3, 5, 10, 20, 50, 70, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]`), I observed that **at 5 clusters**, visually similar logos (e.g., **Toyota, Hyundai, Mazda, and Honda**) were grouped together more effectively compared to other logos. This indicates that the clustering approach successfully captures visual similarities between logos. Number of clusters chosen influences the grouping of the logos. A great number of cluster may capture the differences better, but there should also be taken into consideration what happens when the number of clusters is less than the number of unique websites/logos or labels.
 
 ### 6. **Saving and Visualizing Results**
 - Logos are saved into corresponding cluster folders.
