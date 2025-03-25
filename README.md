@@ -48,6 +48,11 @@ This folder contains:
 ### 7. **Saving and Visualizing Results**
 - Logos are saved into corresponding cluster folders.
 
+### 8. **Running the Script**
+To execute the script with a dataset, use the following command in the terminal:
+```bash
+python check_similarity.py path_to_dataset 20
+
 ## Requirements
 To run this project, install the required dependencies:
 ```bash
