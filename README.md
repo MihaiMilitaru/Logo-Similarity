@@ -51,7 +51,7 @@ This folder contains:
 ### 8. **Running the Script**
 To execute the script with a dataset, use the following command in the terminal:
 ```bash
-python check_similarity.py path_to_dataset 20
+python check_similarity.py path_to_dataset number_of_clusters
 
 ## Requirements
 To run this project, install the required dependencies:
