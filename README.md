@@ -52,8 +52,11 @@ This folder contains:
 To execute the script with a dataset, use the following command in the terminal:
 ```bash
 python check_similarity.py path_to_dataset number_of_clusters
+```
 
 ## Requirements
 To run this project, install the required dependencies:
+
 ```bash
 pip install numpy pandas requests opencv-python tensorflow scikit-learn matplotlib
+```
