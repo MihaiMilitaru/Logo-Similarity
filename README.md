@@ -1,4 +1,4 @@
-# Logo Similarity Clustering
+# Logo Similarity 
 
 ## Overview
 This project aims to cluster logos based on visual similarities using deep learning and K-Means clustering. Given a dataset containing domain names, the script automatically fetches logos from Clearbit, extracts features using a pre-trained VGG16 model, and clusters them based on visual characteristics.
